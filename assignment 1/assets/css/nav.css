@@ -1,0 +1,13 @@
+/* Navigation bar */
+.nav{
+    line-height: 30px;
+  }
+
+  a.nav{
+    text-decoration: none;
+    color: black;
+  }
+
+  a.nav:hover{
+    color: rgb(67, 66, 66);
+  }

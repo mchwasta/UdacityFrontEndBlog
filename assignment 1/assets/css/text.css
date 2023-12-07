@@ -1,0 +1,108 @@
+/* Homepage */
+.blog-title{
+    font-size: 21px;
+}
+
+.blog-date {
+    font-size:14px;   
+}
+
+.blog-preview {
+    font-size: 12px;
+}
+
+.blog-post{
+    line-height: 10px;
+}
+
+/* Blog */
+figure{
+    font-style: italic;
+    font-size: 12px;
+    padding: 0.5em;
+}
+
+p{
+    font-size: 17px;
+}
+
+.author-name{
+    font-size: 15px;
+}
+
+.date{
+    font-size: 14px;
+}
+
+.share-to{
+    font-size: 15px;
+}
+
+.post-info{
+    line-height: 8px;
+}
+
+.author-text{
+    font-size: 15px;
+}
+
+@media(min-width: 600px) and (max-width: 1100px){
+    p{
+        font-size: 20px;
+    }
+    
+    .author-name{
+        font-size: 18px;
+    }
+    
+    .date{
+        font-size: 17px;
+    }
+    
+    .share-to{
+        font-size: 18px;
+    }
+    
+    .author-info{
+        line-height: 25px;
+    }
+
+    .author-text{
+        font-size: 17px;
+    }
+
+}
+
+@media(min-width: 1100px){
+    .author-info{
+        line-height: 25px;
+    }
+
+    p{
+        font-size: 22px;
+    }
+    
+    .author-name{
+        font-size: 18px;
+    }
+    
+    .date{
+        font-size: 17px;
+    }
+    
+    .share-to{
+        font-size: 18px;
+    }
+    
+    .author-name{
+        font-size: 18px;
+    }
+
+    .author-info{
+        line-height: 25px;
+    }
+
+    .author-text{
+        font-size: 19px;
+    }
+}

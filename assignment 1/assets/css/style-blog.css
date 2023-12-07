@@ -1,0 +1,284 @@
+@import "design.css";
+@import "text.css";
+@import "nav.css";
+
+
+/* Mobile */
+img{
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+}
+    
+    
+.container{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 40px 200px 50px auto 200px 40px;
+    grid-template-areas: 
+    "hd"
+    "nav"
+    "fig"
+    "info" 
+    "main"
+    "author"
+    "ft"
+}
+    
+.header{
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+figure{
+    grid-area:fig;
+    text-align: center;
+}
+
+.info{
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". pst shre .";
+}
+
+.share-icon{
+    width: 20px;
+    height: 20px;
+}
+
+
+.post-info{
+    grid-area: pst;
+}
+
+.social-sharing{
+    grid-area: shre;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.share-icons{
+    padding: 12px 0 0 3px;
+}
+
+.content{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        
+}
+
+.article{
+    text-align: left;
+}
+
+.author{
+    grid-area: author;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas:
+    ". pic txt .";
+}
+
+.author-pic{
+    grid-area: pic;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.author-info{
+    grid-area: txt;
+    line-height: 20px;
+}
+
+#author-text{
+    font-size: 17px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.footer{
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.socials-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.socials{
+    margin: 2px;
+}
+    
+
+/* Mid screens */
+@media(min-width: 600px) and (max-width: 1100px){
+    img{
+        width: auto;
+        height: 320px;
+    }
+    
+    .container{
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 40px 360px 55px auto 200px 40px;
+        grid-template-areas: 
+        "hd"
+        "nav"
+        "fig"
+        "info" 
+        "main"
+        "author"
+        "ft"
+    }
+    
+    figure{
+        grid-area:fig;
+    }
+    
+    .info{
+        grid-area: info;
+        display: grid;
+        grid-template-columns: 1fr 200px 200px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        ". pst shre .";
+    }
+ 
+    .author-name{
+        padding: 0.5px;
+    }
+
+    .post-info{
+        grid-area: pst;
+        text-align: center;
+    }
+
+    .social-sharing{
+        grid-area: shre;
+    }
+
+    .share-icons{
+        padding: 16px 0 0 4px;
+    }
+
+    .content{
+        grid-area: main;
+        text-align: center;
+    }
+
+    .author{
+        grid-area: author;
+    }
+    
+    .author-pic{
+        grid-area: pic;
+    }
+
+    .author-info{
+        grid-area: txt;
+    }
+}
+    
+@media(min-width: 1100px){
+    img{
+        width: auto;
+        height: 400px;
+        }
+
+    .container{
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 40px 460px 55px auto 200px 40px;
+        grid-template-areas: 
+        "hd"
+        "nav"
+        "fig"
+        "info" 
+        "main"
+        "author"
+        "ft"
+    }
+    
+    figure{
+        grid-area:fig;
+    }
+    
+    .info{
+        grid-area: info;
+        display: grid;
+        grid-template-columns: 1fr 200px 200px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        ". pst shre .";
+    }
+
+    .author-name{
+        padding: 0.5px;
+    }
+
+    .post-info{
+        grid-area: pst;
+        text-align: center;
+    }
+
+    .social-sharing{
+        grid-area: shre;
+    }
+
+    .share-icons{
+        padding: 16px 0 0 4px;
+    }
+
+    .content{
+        grid-area: main;
+        text-align: center;
+    }
+
+    .author{
+        grid-area: author;
+    }
+    
+    .author-pic{
+        grid-area: pic;
+    }
+
+    .author-info{
+        grid-area: txt;
+    }
+}

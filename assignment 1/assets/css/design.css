@@ -1,0 +1,26 @@
+/* Background and font */
+body{
+    background-color:  #77DD77;
+    font-family: 'Questrial', serif;   
+}
+
+/* Lines on Homepage */
+.header{
+    border-bottom: 1px solid black;
+}
+
+.navbar{
+    border-bottom: 1px solid black;
+}
+
+/* Lines on blog */
+.author{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+/* Blog post */
+.blog-post {
+    border: 1px solid black;
+    background-color:#b0FFAD;
+  }
